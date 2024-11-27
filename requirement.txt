@@ -1,0 +1,11 @@
+treamlit
+pandas
+numpy
+sklearn
+pickle
+yellowbrick.cluster
+KElbowVisualizer
+sklearn.mixture
+sklearn.pipeline
+sklearn.compose
+joblib
