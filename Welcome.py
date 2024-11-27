@@ -29,11 +29,10 @@ def get_inputs():
     st.button("Reset", type="primary")
     if st.button('Predict'):
         with open("gmm_pipeline.pkl", "rb") as file:
-            reconstructed_model = pickle.load(file)
-    	#reconstructed_model = joblib.load('gmm_pipeline.joblib')        
-    	pred= reconstructed_model.predict(exo)
-    	st.subheader('Predicted Customer Cluster is: ', divider='rainbow')
-    	st.subheader(pred)
+            reconstructed_model = pickle.load(file)    	  
+    	    pred= reconstructed_model.predict(exo)
+    	    st.subheader('Predicted Customer Cluster is: ', divider='rainbow')
+    	    st.subheader(pred)
     
     
    
